@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto+Mono:wght@100;500&display=swap');
+
+:root {
+  --font1: 'Roboto Mono', monospace;
+  --font2: 'Inconsolata', monospace;
+  font-size: 15px;
+  
+}
+
+body {
+  margin: 0px;
+  font-family: var(--font2);
+  box-sizing: border-box;
+}
+
+header {
+font-family: var(--font1);
+background-image: url("https://64.media.tumblr.com/5a342bf4b54baf76ce3a8a878547ac72/tumblr_px7uyvh3nF1yspfu0o1_540.gifv");
+background-repeat: no-repeat;
+background-size: cover;
+color: whitesmoke;
+font-size: 3rem;
+text-align: center;
+width: 100%;
+
+}
+
+/*--NAV--*/
+nav {
+  width: 100%;
+  height: auto;
+background-color: lightgreen;
+color: white;
+text-align: center;
+font-size: 1.5rem;
+margin: 0rem  0rem 4rem 0rem;
+}
+
+nav li, nav ul{
+
+list-style-type: none;
+display: inline;
+margin-top: 0px;
+
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  padding: 2.5rem;
+}
+
+nav li:hover {
+  background-color: #7ED07E;
+}
+
+/*----MAIN--*/
+
+main {
+  width: 60%;
+  margin-left: 2em;
+}
+
+main p {
+  line-height: 1.5rem;
+}
+
+main a {
+  text-decoration: none;
+  color: lightgreen;
+  transition: .2s;
+}
+
+main a:hover{
+  color: #7ED07E;
+  transform: scale(5px, 5px);
+}
+
+main img {
+  width: 22rem;
+  height: 20rem;
+  object-fit: fill;
+}
+
+article {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
+}
+
+article:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.more-posts {
+  display: block;
+  margin: 2rem 0rem;
+
+}
+
+main button {
+  width: 7rem;
+  height: 4rem;
+  background-color: transparent;
+  border: lightgreen 1px solid;
+  color: lightgreen;
+}
+
+main button:hover{
+  background-color: lightgreen;
+  color:white;
+}
+
+/*----SUBSCRIPTION*/
+
+.subsciption {
+  position: fixed;
+  bottom: 64%;
+  right: 5%;
+  border: 2px dashed lightgreen;
+  padding: 1em;
+  
+}
+
+.subsciption input {
+  font-family: var(--font2);
+}
+
+.subsciption [input]:focus {
+  box-sizing: border-box;
+  border: 1px solid lightgreen;
+}
+
+.subsciption button {
+  background-color: lightgreen;
+  border: 1px solid black;
+  font-family: var(--font2);
+}
+
+.subsciption button:hover {
+  background-color: #7ED07E;
+}
+
+/*.subsciption h2 {
+  
+}*/
+.subsciption span {
+  display: block;
+  margin-bottom: 0.5em;
+  color: green;
+}
+
+/*----FOOTER*/
+
+footer {
+text-align: center;
+margin-top: 2rem;
+padding: 2rem;
+}
+
+  /*--MEDIA QUERIES*/
+
+  /*@media only screen and (max-width: 800px) {
+    .subsciption {
+      position: static;
+      width: 40%;
+      margin-top: 2rem;
+     }}*/
+    @media only screen and (max-width: 1100px) {
+      .subsciption{
+        position: static;
+        border: none;
+        width: 100%;
+        text-align: center;
+        background-color: lightgrey;
+        margin-top: 2rem;
+      }
+      main {
+        width: 80vw;
+        /*margin-right: 2rem;*/
+      }
+      nav li, nav ul{
+
+        display: block;/*ADD*/
+        margin-top: 0px;
+        
+      }
+      main img, main p {
+        margin: 0 auto;
+      }
+      }
+ 
